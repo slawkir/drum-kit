@@ -102,8 +102,8 @@ body {
     }
 
     .key {
-      height: 6rem; 
-      width: 4rem;
+      height: 3rem; 
+      width: 5rem;
     }
 
     kbd { 
@@ -147,19 +147,27 @@ body {
     }
 
     .key {
-      height: 4rem; 
-      width: 3rem;
+      height: 2rem; 
+      width: 2rem;
     }
 
     kbd { 
-      font-size: 28px;
+      font-size: 48px;
     }
 
     .typesound {
-      font-size: 12px;
+      font-size: 0;
       letter-spacing: 4px;
       color: rgb(236, 247, 187);
       font-weight: 600;
+      }
+
+      .keys {
+    
+        margin-top: 40px;
+        margin-left: 40px;
+
+        
       }
   
    }
