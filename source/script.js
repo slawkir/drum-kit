@@ -19,3 +19,17 @@ keys.forEach((key) =>
   key.addEventListener('click', () => playSound(key.dataset.key))
 );
 window.addEventListener('keydown', (e) => playSound(e.keyCode));
+
+
+document.querySelector('.openfullscreen').addEventListener('click', toggleScreen);  
+function toggleScreen() {
+  if (!document.fullscreenElement) { //(document.fullscreenElement === null)
+      document.documentElement.requestFullscreen();
+  }
+  else {
+      if (document.fullscreenEnabled) {
+         document.exitFullscreen();
+      }
+
+  }
+}
