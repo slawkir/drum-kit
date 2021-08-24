@@ -11,6 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   min-height: 100vh;
 }
 
@@ -18,12 +19,14 @@ body {
     border: 6px solid rgb(76, 25, 196);
     border-radius: 15px;
     margin: 20px;
-    font-size: 10px; 
+    font-size: 1.5rem;
     transition: all 0.07s ease;
-    width: 120px;
+    width: 6rem;
+    height: 6rem;
     text-align: center;
     color: white;
     background: rgba(0, 0, 0, 0.3);
+    padding: 1rem 0.5rem;
     
   }
 
@@ -66,3 +69,99 @@ body {
   :-webkit-full-screen .fullscreen {
     background-image: url("../img/fullscreen-open.svg");
   }
+
+
+  @media screen and (max-width: 1024px) {
+    body {
+      background: url(../img/drum.jpg) no-repeat center center fixed;
+      background-size: 600px auto;
+    }
+
+    kbd { 
+      font-size: 48px;
+    }
+
+    .key {
+      
+      width: 4rem;
+    }
+
+    .typesound {
+      font-size: 16px;
+      letter-spacing: 4px;
+      color: rgb(236, 247, 187);
+      font-weight: 600;
+      }
+  
+   }
+
+   @media screen and (max-width: 640px) {
+    body {
+      background: url(../img/drum.jpg) no-repeat center center fixed;
+      background-size: 400px auto;
+    }
+
+    .key {
+      height: 6rem; 
+      width: 4rem;
+    }
+
+    kbd { 
+      font-size: 32px;
+    }
+    
+    .typesound {
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: rgb(236, 247, 187);
+      font-weight: 600;
+      }
+
+      .fullscreen {
+        position: fixed;
+        top: 30px;
+        left: 20px;
+        width: 40px;
+        height: 40px;
+        
+      }
+
+      .keys {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        min-height: 100vh;
+        margin-top: 40px;
+        margin-left: 40px;
+
+        
+      }
+  
+   }
+
+   @media screen and (max-width: 320px) {
+    body {
+      background: url(../img/drum.jpg) no-repeat center center fixed;
+      background-size: 400px auto;
+    }
+
+    .key {
+      height: 4rem; 
+      width: 3rem;
+    }
+
+    kbd { 
+      font-size: 28px;
+    }
+
+    .typesound {
+      font-size: 12px;
+      letter-spacing: 4px;
+      color: rgb(236, 247, 187);
+      font-weight: 600;
+      }
+  
+   }
+  
+  
